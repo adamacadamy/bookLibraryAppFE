@@ -8,30 +8,43 @@
 /* Header and Navbar Styling */
 header {
   width: 100%;
-  background-color: #181F25; /* Dark background color matching the image */
-  font-family: Arial, sans-serif; /* Simple font for readability */
+  background-color: #181F25;
+  /* Dark background color matching the image */
+  font-family: Arial, sans-serif;
+  /* Simple font for readability */
 }
 
 .navbar {
   display: flex;
-  align-items: stretch; /* Ensure children fill the height */ 
-  height: 60px; /* Set a fixed height for the navbar */
+  align-items: stretch;
+  /* Ensure children fill the height */
+  height: 60px;
+  /* Set a fixed height for the navbar */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3)
 }
 
 /* Logo Styling */
 .logo {
   color: white;
-  font-size: 20px; 
-  background-color: #1D1D1D; /* Slightly darker background for the logo area */
-  padding: 8px 15px; /* Padding for the logo */
-  border: 2px solid #ff6200; /* Orange border around the logo */
-  line-height: 1; /* Prevent extra space due to line height */
-  flex-shrink: 0; /* Prevent the logo from shrinking */
-  display: flex; /* Use flex to center the text vertically */
-  align-items: center; /* Center the text vertically */
-  height: 100%; /* Ensure the logo takes the full height of the navbar */
-  box-sizing: border-box; /* Ensure padding and border are included in the height */
+  font-size: 20px;
+  background-color: #1D1D1D;
+  /* Slightly darker background for the logo area */
+  padding: 8px 15px;
+  /* Padding for the logo */
+  border: 2px solid #ff6200;
+  /* Orange border around the logo */
+  line-height: 1;
+  /* Prevent extra space due to line height */
+  flex-shrink: 0;
+  /* Prevent the logo from shrinking */
+  display: flex;
+  /* Use flex to center the text vertically */
+  align-items: center;
+  /* Center the text vertically */
+  height: 100%;
+  /* Ensure the logo takes the full height of the navbar */
+  box-sizing: border-box;
+  /* Ensure padding and border are included in the height */
   font-family: 'Rajdhani', sans-serif;
 }
 
@@ -39,76 +52,101 @@ header {
 .nav-links {
   display: flex;
   list-style: none;
-  align-items: stretch; /* Stretch <li> elements to the full height */
-  height: 100%; /* Make nav-links take the full height of the navbar */
-  margin: 0 auto; /* Center the ul horizontally */
-  flex-shrink: 0; /* Prevent the nav-links from shrinking */
+  align-items: stretch;
+  /* Stretch <li> elements to the full height */
+  height: 100%;
+  /* Make nav-links take the full height of the navbar */
+  margin: 0 auto;
+  /* Center the ul horizontally */
+  flex-shrink: 0;
+  /* Prevent the nav-links from shrinking */
 }
 
 .nav-links li {
-  margin: 0; /* No margin to eliminate space between links */
-  display: flex; /* Use flex to make the <a> inside stretch */
-  align-items: stretch; /* Stretch the <a> to fill the <li> */
-  height: 100%; /* Make the <li> take the full height of the nav-links */
+  margin: 0;
+  /* No margin to eliminate space between links */
+  display: flex;
+  /* Use flex to make the <a> inside stretch */
+  align-items: stretch;
+  /* Stretch the <a> to fill the <li> */
+  height: 100%;
+  /* Make the <li> take the full height of the nav-links */
   border-radius: 3px;
-  font-family: 'Poppins', sans-serif; /* default to Poppins */
+  font-family: 'Poppins', sans-serif;
+  /* default to Poppins */
 }
 
 .nav-links a {
-  color:     var( --form-placeholder);
+  color: var(--form-placeholder);
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
-  padding: 0 20px; /* Horizontal padding only */
-  display: flex; /* Use flex to center the text vertically */
-  align-items: center; /* Center the text vertically */
-  justify-content: center; /* Center the text horizontally */
-  transition: background-color 0.3s ease, font-weight 0.3s ease; /* Smooth transition for hover effects */
-  height: 100%; /* Ensure the <a> takes the full height of the <li> */
-  border-radius: 0; /* Remove border-radius to ensure background touches edges */
+  padding: 0 20px;
+  /* Horizontal padding only */
+  display: flex;
+  /* Use flex to center the text vertically */
+  align-items: center;
+  /* Center the text vertically */
+  justify-content: center;
+  /* Center the text horizontally */
+  transition: background-color 0.3s ease, font-weight 0.3s ease;
+  /* Smooth transition for hover effects */
+  height: 100%;
+  /* Ensure the <a> takes the full height of the <li> */
+  border-radius: 0;
+  /* Remove border-radius to ensure background touches edges */
 }
 
 /* Styling for LOGIN and BOOKS links */
 /* Hover Effects for Links */
 .nav-links a:not(.highlight):hover {
   font-weight: bolder;
-  color:     var( --form-text);
-  
+  color: var(--form-text);
+
 }
-.nav-links   li.highlight a{
+
+.nav-links li.highlight a {
   font-weight: bold;
-  
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3)
-  color:     var( --form-text);
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  color: var(--form-text);
 }
-.nav-links   li.highlight {
-  background-color: #e55b00; /* Slightly darker orange on hover for REGISTER */;
-  color:     var( --form-text);
+
+.nav-links li.highlight {
+  background-color: #e55b00;
+  /* Slightly darker orange on hover for REGISTER */
+  ;
+  color: var(--form-text);
 }
 
 
 .user-profile {
   display: flex;
   align-items: center;
-  background-color: #1D1D1D; /* Same dark background as the logo */
+  background-color: #1D1D1D;
+  /* Same dark background as the logo */
   padding: 8px 15px;
-  border: 2px solid #ff6200; /* Orange border to match the logo */
-  color: var( --form-placeholder);
+  border: 2px solid #ff6200;
+  /* Orange border to match the logo */
+  color: var(--form-placeholder);
   font-size: 16px;
   font-weight: 500;
-  flex-shrink: 0; /* Prevent shrinking */
-  border-radius: 5px;
-  
-  font-family: 'Poppins', sans-serif; /* default to Poppins */
+  flex-shrink: 0; 
+
+  font-family: 'Poppins', sans-serif;
+  /* default to Poppins */
 }
 
 .user-profile span {
-  margin-right: 8px; /* Space between the name and the icon */
+  margin-right: 8px;
+  /* Space between the name and the icon */
 }
 
 .user-profile a {
-  text-decoration: none; /* Removes underline or other link decorations */
-  color: inherit; /* Ensures the link inherits the color from its parent */
+  text-decoration: none;
+  /* Removes underline or other link decorations */
+  color: inherit;
+  /* Ensures the link inherits the color from its parent */
   font-weight: bold;
 }
 
@@ -116,12 +154,14 @@ header {
 
   font-weight: bold;
 }
-.logout-icon:hover{
+
+.logout-icon:hover {
   font-size: 16px;
-  color: var( --form-text);
+  color: var(--form-text);
 }
-.user-profile-text:hover{
-  
+
+.user-profile-text:hover {
+
   font-size: 16px;
-  color: var( --form-text);
+  color: var(--form-text);
 }
