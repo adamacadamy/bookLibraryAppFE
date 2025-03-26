@@ -16,6 +16,7 @@ header {
   display: flex;
   align-items: stretch; /* Ensure children fill the height */ 
   height: 60px; /* Set a fixed height for the navbar */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3)
 }
 
 /* Logo Styling */
@@ -77,6 +78,7 @@ header {
 .nav-links   li.highlight a{
   font-weight: bold;
   
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3)
   color:     var( --form-text);
 }
 .nav-links   li.highlight {
