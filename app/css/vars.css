@@ -1,3 +1,4 @@
+/* vars.css*/
 /* =======================================
    Import Fonts and Icons
 ======================================= */
@@ -92,4 +93,7 @@
   --dropdown-arrow-default: url("data:image/svg+xml;utf8,<svg fill='white' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
   --dropdown-arrow-error: url("data:image/svg+xml;utf8,<svg fill='red' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
   --dropdown-arrow-error-alt: url("data:image/svg+xml;utf8,<svg fill='%23ff3333' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  
+  --modal-overlay-bg: #d9d9d96b;
+  --modal-content-shadow: box-shadow: 0 2px 10px rgba(0,0,0,0.5);
 }
