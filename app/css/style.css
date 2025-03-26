@@ -2,94 +2,94 @@
    Base Page Setup
 ===================================== */
 body {
-  font-family: 'Roboto', sans-serif;         /* Uses imported Roboto font */
-  color: #fff;                               /* Global text color */
-  margin: 0;
-  padding: 0;
-  background-color: #1D1D1D;                 /* Fallback background */
-  background-image: var(--app-bg);           /* Gradient background layers */
-  background-blend-mode: overlay;
+  font-family: 'Roboto', sans-serif;    /* Sets global font to Roboto, with sans-serif fallback */
+  color: #fff;                          /* Sets global text color to white */
+  margin: 0;                            /* Removes default browser margin */
+  padding: 0;                           /* Removes default browser padding */
+  background-color: #1D1D1D;            /* Solid fallback background color (dark grey) */
+  background-image: var(--app-bg);      /* Applies gradient background via CSS variable (--app-bg) */
+  background-blend-mode: overlay;       /* Blends background gradient over fallback color */
 }
-
 
 /* =====================================
    Layout Wrapper - Fluid Side-by-Side Containers
 ===================================== */
 .layout-wrapper {
-  display: flex;
-  flex-wrap: wrap;                           /* Responsive stacking on small screens */
-  gap: 0.5rem;;                                 /* Space between containers */
-  justify-content: center;
-  align-items: flex-start;
-  padding: 2rem;
+  display: flex;                        /* Enables flexbox layout for fluid positioning */
+  flex-wrap: wrap;                      /* Allows containers to wrap onto new lines when screen size reduces */
+  gap: 0.5rem;                          /* Sets spacing between child elements (containers) */
+  justify-content: center;              /* Horizontally centers containers within wrapper */
+  align-items: flex-start;              /* Aligns containers vertically to the top */
+  padding: 2rem;                        /* Adds padding around the entire wrapper */
 }
-
 
 /* =====================================
    Container Box Styling
 ===================================== */
 .container {
-  background: var(--app-container);          /* Uses radial-gradient + base bg */
-  padding: 2rem;
-  border-radius: 12px;
-  flex: 1 1 320px;                           /* Fluid container: grow, shrink, base width */
-  max-width: 400px;
-  min-width: 300px;
+  background: var(--app-container);     /* Sets background using CSS variable (--app-container), typically a gradient or styled bg */
+  padding: 2rem;                        /* Adds inner padding within container boxes */
+  border-radius: 12px;                  /* Adds rounded corners to container boxes (12px radius) */
+  flex: 1 1 320px;                      /* Enables containers to grow and shrink fluidly, with initial width set at 320px */
+  max-width: 400px;                     /* Limits container's maximum width to 400px */
+  min-width: 300px;                     /* Ensures containers never shrink below 300px width */
 }
-
 
 /* =====================================
    Button Section Layout
 ===================================== */
 .section {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
+  display: flex;                        /* Enables flexbox layout for horizontal arrangement */
+  justify-content: center;              /* Horizontally centers buttons within the section */
+  gap: 2rem;                            /* Sets spacing between buttons */
+  flex-wrap: wrap;                      /* Allows buttons to wrap onto new lines on smaller screens */
 }
 
-.form-section{
-  display: flex; 
-  flex-direction: column;
-   gap: 1rem;
-    max-width: 400px;
-     margin: auto;
+/* =====================================
+   Form Section Layout
+===================================== */
+.form-section {
+  display: flex;                        /* Enables flexbox layout */
+  flex-direction: column;               /* Stacks form elements vertically */
+  gap: 1rem;                            /* Sets spacing between form elements */
+  max-width: 400px;                     /* Limits form section width to 400px */
+  margin: auto;                         /* Horizontally centers form section within its parent */
 }
 
 /* =====================================
    Headings Typography
 ===================================== */
 h1, h2, h3, h4, h5, h6 {
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
+  text-align: center;                   /* Centers text horizontally for all headings */
+  font-family: 'Roboto', sans-serif;    /* Ensures headings use Roboto font with sans-serif fallback */
 }
 
 h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
+  font-size: 2.5rem;                    /* Sets font size of h1 heading to 2.5rem (~40px) */
+  font-weight: 700;                     /* Sets h1 font weight to bold */
 }
 
 h2 {
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 2rem;                      /* Sets font size of h2 heading to 2rem (~32px) */
+  font-weight: 600;                     /* Sets h2 font weight to semi-bold */
 }
 
 h3 {
-  font-size: 1.75rem;
-  font-weight: 600;
+  font-size: 1.75rem;                   /* Sets font size of h3 heading to 1.75rem (~28px) */
+  font-weight: 600;                     /* Sets h3 font weight to semi-bold */
 }
 
 h4 {
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-size: 1.5rem;                    /* Sets font size of h4 heading to 1.5rem (~24px) */
+  font-weight: 500;                     /* Sets h4 font weight to medium */
 }
 
 h5 {
-  font-size: 1.25rem;
-  font-weight: 500;
+  font-size: 1.25rem;                   /* Sets font size of h5 heading to 1.25rem (~20px) */
+  font-weight: 500;                     /* Sets h5 font weight to medium */
 }
 
 h6 {
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 1rem;                      /* Sets font size of h6 heading to 1rem (~16px) */
+  font-weight: 500;                     /* Sets h6 font weight to medium */
 }
