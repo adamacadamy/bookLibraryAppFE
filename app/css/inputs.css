@@ -97,7 +97,7 @@
 .combined-form select {
   appearance: none;                            /* Removes default dropdown appearance */
   background-color: transparent;               /* Transparent background */
-  color: var(--form-placeholder);              /* Placeholder color */
+  color: var(--form-text);              /* Placeholder color */
   border: none;                                /* Removes borders from select */
   padding: 0.5rem 1rem;                        /* Inner padding */
   padding-right: 2rem;                         /* Padding to accommodate arrow */

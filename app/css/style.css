@@ -1,3 +1,9 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 /* =====================================
    Base Page Setup
 ===================================== */
@@ -41,8 +47,14 @@ body {
 .section {
   display: flex;                        /* Enables flexbox layout for horizontal arrangement */
   justify-content: center;              /* Horizontally centers buttons within the section */
-  gap: 2rem;                            /* Sets spacing between buttons */
+  gap: 0.5rem;                            /* Sets spacing between buttons */
   flex-wrap: wrap;                      /* Allows buttons to wrap onto new lines on smaller screens */
+}
+
+.streched-container{
+  background: var(--app-container); 
+  display: flex;    
+  padding: 2rem;  
 }
 
 /* =====================================
