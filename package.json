@@ -1,0 +1,19 @@
+{
+    "name": "liveserver",
+    "version": "1.0.0",
+    "main": "script.js",
+    "scripts": {
+        "start:dev": "live-server . --port=3000 --open --wait=1000 --ignore=node_modules",
+        "start:prod": "live-server . --port=4000 --open --wait=1000 --ignore=node_modules"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "live-server": "^1.2.2"
+    },
+    "keywords": [],
+    "description": "",
+    "dependencies": {
+        "jquery": "^3.7.1"
+    }
+}

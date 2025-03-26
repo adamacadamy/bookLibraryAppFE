@@ -1,0 +1,19 @@
+{
+    "app": {
+        "index.html": "",
+        "css": {
+            "style.css": ""
+        },
+        "js": {
+            "app.js": ""
+        },
+        "assets": {
+            "images": {}
+        }
+    },
+    ".vscode":{
+        "settings.json": "",
+        "launch.json": ""
+    },
+    "README.md": ""
+}

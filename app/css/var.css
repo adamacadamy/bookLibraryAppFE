@@ -1,0 +1,93 @@
+/* =======================================
+   Import Fonts and Icons
+======================================= */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
+
+
+/* =======================================
+   Global CSS Variables
+======================================= */
+:root {
+   
+  /* ---------------------------------------
+     Color: Button Border
+  --------------------------------------- */
+   --button-border-color: #000000; /* Define the default border color */
+
+  /* ---------------------------------------
+     Color: Primary Button
+  --------------------------------------- */
+  --color-primary: #CC5633;
+  --color-primary-text: #ffffff;
+  --color-primary-bg: var(--color-primary);
+  --color-primary-hover: #a9442a;
+
+  /* ---------------------------------------
+     Color: Secondary Button
+  --------------------------------------- */
+  --color-secondary: #181F25;
+  --color-secondary-text: #ffffff;
+  --color-secondary-bg: var(--color-secondary);
+  --color-secondary-hover: #121619;
+
+  /* ---------------------------------------
+     Color: Success Button
+  --------------------------------------- */
+  --color-success: #0ACF83;
+  --color-success-text: #ffffff;
+  --color-success-bg: var(--color-success);
+  --color-success-hover: #089b64;
+
+  /* ---------------------------------------
+     Color: Warning Button
+  --------------------------------------- */
+  --color-warning: #CA8627;
+  --color-warning-text: #000000;
+  --color-warning-bg: var(--color-warning);
+  --color-warning-hover: #a46b1f;
+
+  /* ---------------------------------------
+     Color: Error Button
+  --------------------------------------- */
+  --color-error: #CE1212;
+  --color-error-text: #ffffff;
+  --color-error-bg: var(--color-error);
+  --color-error-hover: #a50e0e;
+
+
+  /* =======================================
+     Form Field Styling
+  ======================================== */
+  --form-bg: #1D1D1D;                    /* Background inside inputs/selects */
+  --form-border: #181F25;                /* Border color */
+  --form-border-width: 2px;              /* Border thickness */
+  --form-border-radius: 12px;            /* Rounded corners */
+  --form-text: #ffffff;                  /* Input text color */
+  --form-placeholder: #B3B3B3;           /* Placeholder color */
+  --form-focus: #ffffff;                 /* Border color on focus */
+
+  /* Error States */
+  --form-error: #ff3333;                 /* Border + text color for errors */
+  --form-error-bg: #1D1D1D;              /* Background on error */
+  --form-error-text: #ff3333;            /* Error message color */
+
+
+  /* =======================================
+     App & Container Background Styling
+  ======================================== */
+  --app-bg: #1D1D1D;                     /* Base page background */
+  --app-container: 
+    radial-gradient(circle at 30% 20%, rgba(255, 100, 100, 0.05), transparent 60%),
+    radial-gradient(circle at 70% 80%, rgba(100, 255, 255, 0.05), transparent 60%),
+    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.02), transparent 60%),
+    #1D1D1D;                             /* Container background with gradient layers */
+
+
+  /* =======================================
+     Dropdown Arrow Icons
+  ======================================== */
+  --dropdown-arrow-default: url("data:image/svg+xml;utf8,<svg fill='white' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  --dropdown-arrow-error: url("data:image/svg+xml;utf8,<svg fill='red' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  --dropdown-arrow-error-alt: url("data:image/svg+xml;utf8,<svg fill='%23ff3333' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+}

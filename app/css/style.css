@@ -1,0 +1,88 @@
+/* =====================================
+   Base Page Setup
+===================================== */
+body {
+  font-family: 'Roboto', sans-serif;         /* Uses imported Roboto font */
+  color: #fff;                               /* Global text color */
+  margin: 0;
+  padding: 0;
+  background-color: #1D1D1D;                 /* Fallback background */
+  background-image: var(--app-bg);           /* Gradient background layers */
+  background-blend-mode: overlay;
+}
+
+
+/* =====================================
+   Layout Wrapper - Fluid Side-by-Side Containers
+===================================== */
+.layout-wrapper {
+  display: flex;
+  flex-wrap: wrap;                           /* Responsive stacking on small screens */
+  gap: 0.5rem;;                                 /* Space between containers */
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+
+/* =====================================
+   Container Box Styling
+===================================== */
+.container {
+  background: var(--app-container);          /* Uses radial-gradient + base bg */
+  padding: 2rem;
+  border-radius: 12px;
+  flex: 1 1 320px;                           /* Fluid container: grow, shrink, base width */
+  max-width: 400px;
+  min-width: 300px;
+}
+
+
+/* =====================================
+   Button Section Layout
+===================================== */
+.section {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+
+/* =====================================
+   Headings Typography
+===================================== */
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: 500;
+}
