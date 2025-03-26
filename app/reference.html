@@ -2,121 +2,79 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>UI References</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI References</title>
 
-  <!-- CSS Imports -->
-  <link rel="stylesheet" href="css/var.css" />
-  <link rel="stylesheet" href="css/buttons.css" />
-  <link rel="stylesheet" href="css/inputs.css" />
-  <link rel="stylesheet" href="css/header.css" />
-  <link rel="stylesheet" href="css/style.css" />
+    <!-- CSS Imports -->
+    <link rel="stylesheet" href="css/var.css" />
+    <link rel="stylesheet" href="css/buttons.css" />
+    <link rel="stylesheet" href="css/inputs.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
   <h1>References</h1>
-
+   
   <div class="layout-wrapper">
 
     <div class="container">
-      <h2>BUTTON SETS</h2>
+        <h2>BUTTON SETS</h2>
 
-      <div class="section">
-        <!-- Text-only Buttons -->
-        <div style="display: flex; flex-direction: column; gap: 1rem;">
-          <button class="button btn-primary">PRIMARY</button>
-          <button class="button btn-secondary">SECONDARY</button>
-          <button class="button btn-success">SUCCESS</button>
-          <button class="button btn-warning">WARNING</button>
-          <button class="button btn-error">ERROR</button>
-        </div>
+        <div class="section">
+            <!-- Text-only Buttons -->
+            <div class="form-section">
+                <button class="button btn-primary">PRIMARY</button>
+                <button class="button btn-secondary">SECONDARY</button>
+                <button class="button btn-success">SUCCESS</button>
+                <button class="button btn-warning">WARNING</button>
+                <button class="button btn-error">ERROR</button>
+            </div>
 
-        <!-- Icon + Text Buttons -->
-        <div style="display: flex; flex-direction: column; gap: 1rem;">
-          <button class="button btn-primary"><i class="fas fa-paper-plane"></i> PRIMARY</button>
-          <button class="button btn-secondary"><i class="fas fa-check-square"></i> SECONDARY</button>
-          <button class="button btn-success"><i class="fas fa-check"></i> SUCCESS</button>
-          <button class="button btn-warning"><i class="fas fa-exclamation-triangle"></i> WARNING</button>
-          <button class="button btn-error"><i class="fas fa-exclamation-circle"></i> ERROR</button>
-        </div>
+            <!-- Icon + Text Buttons -->
+            <div class="form-section">
+                <button class="button btn-primary"><i class="fas fa-paper-plane"></i> PRIMARY</button>
+                <button class="button btn-secondary"><i class="fas fa-check-square"></i> SECONDARY</button>
+                <button class="button btn-success"><i class="fas fa-check"></i> SUCCESS</button>
+                <button class="button btn-warning"><i class="fas fa-exclamation-triangle"></i> WARNING</button>
+                <button class="button btn-error"><i class="fas fa-exclamation-circle"></i> ERROR</button>
+            </div>
 
-        <!-- Icon-only Buttons -->
-        <div style="display: flex; flex-direction: column; gap: 1rem;">
-          <button class="button btn-primary icon-only"><i class="fas fa-paper-plane"></i></button>
-          <button class="button btn-secondary icon-only"><i class="fas fa-check-square"></i></button>
-          <button class="button btn-success icon-only"><i class="fas fa-check"></i></button>
-          <button class="button btn-warning icon-only"><i class="fas fa-exclamation-triangle"></i></button>
-          <button class="button btn-error icon-only"><i class="fas fa-exclamation-circle"></i></button>
+            <!-- Icon-only Buttons -->
+            <div class="form-section">
+                <button class="button btn-primary icon-only"><i class="fas fa-paper-plane"></i></button>
+                <button class="button btn-secondary icon-only"><i class="fas fa-check-square"></i></button>
+                <button class="button btn-success icon-only"><i class="fas fa-check"></i></button>
+                <button class="button btn-warning icon-only"><i class="fas fa-exclamation-triangle"></i></button>
+                <button class="button btn-error icon-only"><i class="fas fa-exclamation-circle"></i></button>
+            </div>
         </div>
-      </div>
     </div>
     <div class="container">
-      <h2>Form Elements Error</h2>
-      <div class="section">
-        <!-- Text Input -->
-        <input class="form-control" type="text" placeholder="Text Input" />
-
-        <!-- Drop Down -->
-        <select class="select-control">
-          <option>Drop Down</option>
-          <option>Option 2</option>
-        </select>
-
-        <!-- Text Input with Icon (Funnel) -->
-        <div class="input-with-icon">
-          <input type="text" placeholder="Text Input Iconed" />
-          <i class="fas fa-filter"></i>
-        </div>
-
-        <!-- Combined: Drop Down + Text + Search Icon -->
-        <div class="combined-form">
-          <select>
-
-            <option value="" disabled selected>Select an option</option>
+        <h2>Form Elements Error</h2>
+      
+        <div class="form-section">
+          <!-- Text Input -->
+          <input class="form-control" type="text" placeholder="Text Input" />
+      
+          <!-- Drop Down -->
+          <select class="select-control">
             <option>Drop Down</option>
-            <option>Drop Down</option>
-            <option>Drop Down</option>
-          </select>
-          <input type="text" placeholder="Text Input" />
-          <button type="submit"><i class="fas fa-search"></i></button>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <h2>Form Elements Normal</h2>
-
-      <div class="section">
-
-        <!-- Text Input with Error -->
-        <div>
-          <input class="form-control error" type="text" placeholder="Text Input" value="123123" />
-          <div class="form-error-message">Please enter a valid name.</div>
-        </div>
-
-        <!-- Drop Down with Error -->
-        <div>
-          <select class="select-control error">
-            <option selected>Drop Down</option>
             <option>Option 2</option>
           </select>
-          <div class="form-error-message">Please select a value.</div>
-        </div>
-
-        <!-- Text Input with Icon (Funnel) + Error -->
-        <div>
-          <div class="input-with-icon error">
-            <input type="text" placeholder="Text Input Iconed" value="bse" />
+      
+          <!-- Text Input with Icon (Funnel) -->
+          <div class="input-with-icon">
+            <input type="text" placeholder="Text Input Iconed" />
             <i class="fas fa-filter"></i>
           </div>
-          <div class="form-error-message">This field is required.</div>
-        </div>
-
-        <!-- Combined: Drop Down + Text + Search Icon with Error -->
-        <div>
-          <div class="combined-form error">
+      
+          <!-- Combined: Drop Down + Text + Search Icon -->
+          <div class="combined-form">
             <select>
-              <option value="" disabled selected>Select an option</option>
+            
+              <option value="" disabled selected >Select an option</option>
               <option>Drop Down</option>
               <option>Drop Down</option>
               <option>Drop Down</option>
@@ -124,11 +82,54 @@
             <input type="text" placeholder="Text Input" />
             <button type="submit"><i class="fas fa-search"></i></button>
           </div>
-          <div class="form-error-message">Both fields are required.</div>
         </div>
-
       </div>
-    </div>
+      <div class="container">
+        <h2>Form Elements Normal</h2>
+      
+        <div class="form-section">
+      
+          <!-- Text Input with Error -->
+          <div>
+            <input class="form-control error" type="text" placeholder="Text Input" value="123123" />
+            <div class="form-error-message">Please enter a valid name.</div>
+          </div>
+      
+          <!-- Drop Down with Error -->
+          <div>
+            <select class="select-control error">
+              <option selected>Drop Down</option>
+              <option>Option 2</option>
+            </select>
+            <div class="form-error-message">Please select a value.</div>
+          </div>
+      
+          <!-- Text Input with Icon (Funnel) + Error -->
+          <div>
+            <div class="input-with-icon error">
+              <input type="text" placeholder="Text Input Iconed"  value="bse"/>
+              <i class="fas fa-filter"></i>
+            </div>
+            <div class="form-error-message">This field is required.</div>
+          </div>
+      
+          <!-- Combined: Drop Down + Text + Search Icon with Error -->
+          <div>
+            <div class="combined-form error">
+              <select>
+                <option value="" disabled selected >Select an option</option>
+                <option>Drop Down</option>
+                <option>Drop Down</option>
+                <option>Drop Down</option>
+              </select>
+              <input type="text" placeholder="Text Input" />
+              <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="form-error-message">Both fields are required.</div>
+          </div>
+      
+        </div>
+      </div>
   </div>
 </body>
 
