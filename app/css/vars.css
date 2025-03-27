@@ -96,4 +96,14 @@
   
   --modal-overlay-bg: #d9d9d96b;
   --modal-content-shadow: box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+
+  --table-header-bg: #ffffff;
+  --table-border-radius: 3px;
+  --table-border: #181F25;  
+  --table-text: #181F25;
+
+  --table-bg-availeble: #083446;
+   --table-bg-unavaileble: #ff3333;
+   --color-availeble-text: #ffffff;
+   --color-unavaileble-text: #ffffff;
 }

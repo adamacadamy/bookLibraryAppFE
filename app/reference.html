@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/inputs.css" />
   <link rel="stylesheet" href="css/modal.css" />
   <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/table.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -40,6 +41,7 @@
   <h2>Authenticated Nav</h2>
   <br>
 
+
   <div class="streched-container">
 
 
@@ -63,11 +65,20 @@
     </header>
     </header>
   </div>
+  <br>
+  <br>
+  <br>
+
+  <h2>Form Elements</h2>
+  <br>
+
+  <div class="container">
   <div class="layout-wrapper">
 
     <div class="container">
       <h2>BUTTON SETS</h2>
-
+      <br>
+      <br>
       <div class="section">
         <!-- Text-only Buttons -->
         <div class="form-section">
@@ -98,8 +109,9 @@
       </div>
     </div>
     <div class="container">
-      <h2>Form Elements Error</h2>
-
+      <h2>Input Error Sets</h2>
+      <br>
+      <br>
       <div class="form-section">
         <!-- Text Input -->
         <input class="form-control" type="text" placeholder="Text Input" />
@@ -131,8 +143,9 @@
       </div>
     </div>
     <div class="container">
-      <h2>Form Elements Normal</h2>
-
+      <h2>Input Sets Normal</h2>
+      <br>
+      <br>
       <div class="form-section">
 
         <!-- Text Input with Error -->
@@ -168,7 +181,7 @@
               <option>Drop Down</option>
               <option>Drop Down</option>
             </select>
-            <input type="text" placeholder="Text Input" />
+            <input type="text" placeholder="Text Input" value="a*568" />
             <button type="submit"><i class="fas fa-search"></i></button>
           </div>
           <div class="form-error-message">Both fields are required.</div>
@@ -177,45 +190,183 @@
       </div>
     </div>
   </div>
-  <br>
-  <br>
-  <div class="streched-container">
-    <button class="button btn-error" onclick="openModal()">
-      Delete User
-  </button>
-  <div class="modal-overlay" id="modal">
-    <div class="modal-content">
-        <div class="modal-header">
-            <i class="fa-solid fa-triangle-exclamation icon-warning"></i>
-            Are you sure you want to delete this user?
-        </div>
-        <div class="modal-body">
-            <p>Once a user record is deleted<br>it can not be restored!</p>
-        </div>
-        <div class="modal-footer">
-            <button class="button btn-primary" onclick="closeModal()">
-                <i class="fa-regular fa-square-check"></i> Yes
-            </button>
-            <button class="button btn-warning" onclick="closeModal()">
-                <i class="fa-solid fa-circle-exclamation"></i> No
-            </button>
-        </div>
-    </div>
 </div>
+  <br>
+  <br>
+
+  <h2>Modal Example</h2>
+  <br> 
+    <div class="layout-wrapper">
+      
+  <div class="container">
+    <div class="section">
+      <div class="form-section">
+  
+    <button class="button btn-error" onclick="openModal()">Delete User</button>
+  </div>
+  </div>
+    <div class="container">
+    <div class="modal-overlay" id="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <i class="fa-solid fa-triangle-exclamation icon-warning"></i>
+          Are you sure you want to delete this user?
+        </div>
+        <p class="modal-body">Once a user record is deleted<br>it cannot be restored!</p>
+        <div class="modal-footer">
+          <button class="button btn-primary" onclick="confirmModal()">
+            <i class="fa-regular fa-square-check"></i> Yes
+          </button>
+          <button class="button btn-warning" onclick="closeModal(event)">
+            <i class="fa-solid fa-circle-exclamation"></i> No
+          </button>
+        </div>
+      </div>
+    </div>
+  </div> </div>
+</div>
+  <br>
+  <br> 
+  <h2>Styled Table With Actions</h2>
+  <br>
+  <br>
+<div class="container">
+
+  <table class="styled-table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>NAME</th>
+        <th>EMAIL</th>
+        <th>ROLE</th>
+        <th>ACTIONS</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>John Doe</td>
+        <td>john@example.com</td>
+        <td>ADMIN</td>
+        <td><button class="button btn-success">Active</button></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Jane Smith</td>
+        <td>jane@example.com</td>
+        <td>USER</td>
+        <td><button class="button btn-warning">Pending</button></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Emily Davis</td>
+        <td>emily@example.com</td>
+        <td>GUEST</td>
+        <td><button class="button btn-error">Inactive</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br>
+<br>
+<h2>Styled Table With Custom Backgrounds And Actions</h2>
+<br>
+<br>
+<br> 
+  <div class="container">
+    <table class="styled-table">
+      <thead>
+        <tr>
+          <th>TITLE</th>
+          <th>AUTHOR</th>
+          <th>ISBN</th>
+          <th>ACTIONS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="bg-availeble">To Kill a Mockingbird</td>
+          <td>Harper Lee</td>
+          <td>9780061120084</td>
+          <td>
+            <button class="button btn-success action-btn"><i class="fas fa-ellipsis"></i></button>
+            <button class="button btn-secondary action-btn"><i class="fa-solid fa-pen-to-square"></i></button>
+            <button class="button btn-warning action-btn"><i class="fa-solid fa-trash"></i></button>
+          </td>
+        </tr>
+        <tr>
+          <td class="bg-unavaileble">1984</td>
+          <td>George Orwell</td>
+          <td>9780451524935</td>
+          <td>
+            <button class="button btn-success action-btn"><i class="fas fa-ellipsis"></i></button>
+            <button class="button btn-secondary action-btn"><i class="fa-solid fa-pen-to-square"></i></button>
+            <button class="button btn-warning action-btn"><i class="fa-solid fa-trash"></i></button>
+          </td>
+        </tr>
+        <tr>
+          <td class="bg-availeble">Pride and Prejudice</td>
+          <td>Jane Austen</td>
+          <td>9780141439518</td>
+          <td>
+            <button class="button btn-success action-btn"><i class="fas fa-ellipsis"></i></button>
+            <button class="button btn-secondary action-btn"><i class="fa-solid fa-pen-to-square"></i></button>
+            <button class="button btn-warning action-btn"><i class="fa-solid fa-trash"></i></button>
+          </td>
+        </tr>
+        <tr>
+          <td class="bg-availeble">The Great Gatsby</td>
+          <td>F. Scott Fitzgerald</td>
+          <td>9780743273565</td>
+          <td>
+            <button class="button btn-success action-btn"><i class="fas fa-ellipsis"></i></button>
+            <button class="button btn-secondary action-btn"><i class="fa-solid fa-pen-to-square"></i></button>
+            <button class="button btn-warning action-btn"><i class="fa-solid fa-trash"></i></button>
+          </td>
+        </tr>
+        <tr>
+          <td class="bg-unavaileble">Moby-Dick</td>
+          <td>Herman Melville</td>
+          <td>9781503280786</td>
+          <td>
+            <button class="button btn-success action-btn"><i class="fas fa-ellipsis"></i></button>
+            <button class="button btn-secondary action-btn"><i class="fa-solid fa-pen-to-square"></i></button>
+            <button class="button btn-warning action-btn"><i class="fa-solid fa-trash"></i></button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </body>
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    window.openModal = function() {
-      document.querySelector('#modal').style.display = 'flex';
+  document.addEventListener('DOMContentLoaded', function () {
+    const navLinks = document.querySelectorAll('.nav-links li');
+    const modal = document.querySelector('#modal');
+    navLinks.forEach((link) => {
+      link.addEventListener('click', function () {
+        navLinks.forEach((link) => {
+          link.classList.remove('highlight');
+        });
+        this.classList.add('highlight');
+      });
+    });
+    window.openModal = () => {
+      modal.style.display = 'flex';
     }
 
-    window.closeModal = function() {
-      document.querySelector('#modal').style.display = 'none';
+    window.closeModal = () => {
+      console.log(event.target);
+      modal.style.display = 'none';
+    }
+
+    window.confirmModal = () => {
+      console.log('User Deleted');
+      modal.style.display = 'none';
     }
   });
 </script>
 
 
 </script>
+
 </html>

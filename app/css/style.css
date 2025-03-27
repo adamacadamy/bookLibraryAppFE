@@ -37,9 +37,7 @@ body {
   background: var(--app-container);     /* Sets background using CSS variable (--app-container), typically a gradient or styled bg */
   padding: 2rem;                        /* Adds inner padding within container boxes */
   border-radius: 12px;                  /* Adds rounded corners to container boxes (12px radius) */
-  flex: 1 1 320px;                      /* Enables containers to grow and shrink fluidly, with initial width set at 320px */
-  max-width: 400px;                     /* Limits container's maximum width to 400px */
-  min-width: 300px;                     /* Ensures containers never shrink below 300px width */
+  flex: 1 1 320px;                      /* Enables containers to grow and shrink fluidly, with initial width set at 320px */ 
 }
 
 /* =====================================
@@ -106,3 +104,32 @@ h6 {
   font-size: 1rem;                      /* Sets font size of h6 heading to 1rem (~16px) */
   font-weight: 500;                     /* Sets h6 font weight to medium */
 }
+
+/* =====================================
+   backgrounds
+===================================== */
+.bg-primary {
+  background-color: var(--color-primary-bg); /* Sets background color to primary color */
+  color: var(--color-primary-text);           /* Sets text color to primary text color */
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary-bg); /* Sets background color to secondary color */
+  color: var(--color-secondary-text);           /* Sets text color to secondary text color */
+}
+
+.bg-success {
+  background-color: var(--color-tertiary-bg); /* Sets background color to tertiary color */
+  color: var(--color-tertiary-text);           /* Sets text color to tertiary text color */
+}
+
+.bg-warning {
+  background-color: var(--color-warning-bg); /* Sets background color to warning color */
+  color: var(--color-warning-text);           /* Sets text color to warning text color */
+}
+.bg-error {
+  background-color: var(--color-error-bg); /* Sets background color to error color */
+  color: var(--color-error-text);           /* Sets text color to error text color */
+}
+ 
+ 

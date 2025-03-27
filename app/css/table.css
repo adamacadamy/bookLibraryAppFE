@@ -1,0 +1,41 @@
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Roboto', sans-serif;
+    color: var(--table-text);
+    background-color: var( --table-header-bg);
+    border-radius: var(--table-border-radius);
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+ 
+  .styled-table th,
+  .styled-table td {
+    padding: 1rem;
+    border: 1px solid var(--table-border);
+    text-align: center;
+  }
+
+  .styled-table th {
+    background-color: var(--color-secondary-bg);
+    color: var(--color-secondary-text);
+    font-weight: 700;
+  }
+
+ 
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .styled-table th,
+    .styled-table td {
+      padding: 0.5rem;
+    }
+  }
+
+ .bg-availeble {
+    background: var(--table-bg-availeble); /* Sets background color to availeble color */
+    color: var(--color-availeble-text);           /* Sets text color to availeble text color */
+  }
+.bg-unavaileble {
+    background: var(--table-bg-unavaileble); /* Sets background color to unavaileble color */
+    color: var(--color-unavaileble-text);           /* Sets text color to unavaileble text color */
+  }
