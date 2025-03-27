@@ -74,7 +74,7 @@ body {
 ===================================== */
 h1, h2, h3, h4, h5, h6 {
   text-align: center;                   /* Centers text horizontally for all headings */
-  font-family: 'Roboto', sans-serif;    /* Ensures headings use Roboto font with sans-serif fallback */
+  font-family: 'Roboto', sans-serif;    /* Ensures headings use Roboto font with sans-serif fallback */ 
 }
 
 h1 {
