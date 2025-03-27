@@ -21,7 +21,9 @@ body {
 /* =====================================
    Layout Wrapper - Fluid Side-by-Side Containers
 ===================================== */
-.layout-wrapper {
+.wrapper {
+  
+  background: var(--app-container); 
   display: flex;                        /* Enables flexbox layout for fluid positioning */
   flex-wrap: wrap;                      /* Allows containers to wrap onto new lines when screen size reduces */
   gap: 0.5rem;                          /* Sets spacing between child elements (containers) */
@@ -34,7 +36,7 @@ body {
    Container Box Styling
 ===================================== */
 .container {
-  background: var(--app-container);     /* Sets background using CSS variable (--app-container), typically a gradient or styled bg */
+        /* Sets background using CSS variable (--app-container), typically a gradient or styled bg */
   padding: 2rem;                        /* Adds inner padding within container boxes */
   border-radius: 12px;                  /* Adds rounded corners to container boxes (12px radius) */
   flex: 1 1 320px;                      /* Enables containers to grow and shrink fluidly, with initial width set at 320px */ 
@@ -133,3 +135,10 @@ h6 {
 }
  
  
+hr {
+  border: 0; /* Remove default border */
+  height: 2px; /* Set the thickness of the line */
+  background: linear-gradient(to right, #333, #555, #333); /* Dark gradient effect */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); /* Engraved shadow effect */
+  margin: 20px 0; /* Add spacing around the hr */
+}
