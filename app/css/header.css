@@ -9,7 +9,7 @@
 /* Header and Navbar Styling */
 header {
   width: 100%;
-  background-color: #181F25;
+  background-color: var(--color-header-bg);
   /* Dark background color matching the image */
   font-family: Arial, sans-serif;
   /* Simple font for readability */
@@ -24,15 +24,16 @@ header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3)
 }
 
+
 /* Logo Styling */
 .logo {
   color: white;
   font-size: 20px;
-  background-color: #1D1D1D;
+  background-color: var(--color-header-logo-bg);
   /* Slightly darker background for the logo area */
   padding: 8px 15px;
   /* Padding for the logo */
-  border: 2px solid #ff6200;
+  border: 2px solid var(--color-header-logo-border);
   /* Orange border around the logo */
   line-height: 1;
   /* Prevent extra space due to line height */
@@ -61,20 +62,6 @@ header {
   /* Center the ul horizontally */
   flex-shrink: 0;
   /* Prevent the nav-links from shrinking */
-}
-
-.nav-links li {
-  margin: 0;
-  /* No margin to eliminate space between links */
-  display: flex;
-  /* Use flex to make the <a> inside stretch */
-  align-items: stretch;
-  /* Stretch the <a> to fill the <li> */
-  height: 100%;
-  /* Make the <li> take the full height of the nav-links */
-  border-radius: 3px;
-  font-family: 'Poppins', sans-serif;
-  /* default to Poppins */
 }
 
 .nav-links a {
@@ -114,20 +101,17 @@ header {
 }
 
 .nav-links li.highlight {
-  background-color: #e55b00;
-  /* Slightly darker orange on hover for REGISTER */
-  ;
+  background-color: var(--color-header-highlight);
   color: var(--form-text);
+  border-radius: 4px;
 }
-
-
 .user-profile {
   display: flex;
   align-items: center;
-  background-color: #1D1D1D;
+  background-color: var(--color-header-logo-bg);
   /* Same dark background as the logo */
   padding: 8px 15px;
-  border: 2px solid #ff6200;
+  border: 2px solid var(--color-header-logo-border);
   /* Orange border to match the logo */
   color: var(--form-placeholder);
   font-size: 16px;
@@ -137,7 +121,6 @@ header {
   font-family: 'Poppins', sans-serif;
   /* default to Poppins */
 }
-
 .user-profile span {
   margin-right: 8px;
   /* Space between the name and the icon */
@@ -150,12 +133,10 @@ header {
   /* Ensures the link inherits the color from its parent */
   font-weight: bold;
 }
-
 .user-profile a:hover {
 
   font-weight: bold;
 }
-
 .logout-icon:hover {
   font-size: 16px;
   color: var(--form-text);
