@@ -106,4 +106,10 @@
    --table-bg-unavaileble: #ff3333;
    --color-availeble-text: #ffffff;
    --color-unavaileble-text: #ffffff;
+
+   --color-header-text: #ffffff;
+   --color-header-bg: #181F25;
+   --color-header-logo-bg: #1D1D1D;
+   --color-header-logo-border: #ff6200;
+   --color-header-highlight: #ff6200;   
 }
